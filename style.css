@@ -49,6 +49,22 @@ body {
     display: flex;
 }
 
+.menu > li:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    width: 285px;
+    height: 40px;
+}
+
+.submenu li {
+    width: 285px;
+    height: 40px;
+}
+
 .menu li {
     width: 25%;
     height: 100%;
