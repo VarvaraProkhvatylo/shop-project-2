@@ -190,9 +190,53 @@ body {
 
 /* MAIN */
 
-.slider {
-    /* width: 1200px; */
+.slider-container {
     height: 400px;
-    margin: auto;
+    background-color: #235993a7;
 }
 
+.slider {
+    width: 1200px;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    color: white;
+}
+
+.slide {
+    font-family: "Roboto", sans-serif;
+    font-size: 100px;
+    font-weight: 100;
+}
+
+.slider-pagination {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+    gap: 20px;
+}
+
+.square {
+    /* position: absolute; */
+    border: solid 1px white;
+    width: 10px;
+    height: 10px;
+    margin-bottom: 29px;
+}
+
+.square:hover {
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.arrow- {
+    width: 48px;
+}
+
+.arrow-right {
+    transform: scaleX(-1);
+    right: 0;
+}
