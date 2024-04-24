@@ -188,47 +188,11 @@ body {
     left: -10px;
 }
 
-/* .cart {
-    margin: 6px 0;
-} */
+/* MAIN */
 
-/* a:link .cart-link  {
-    display: block;
-    width: 40px;
-    height: 40px;
-} */
+.slider {
+    /* width: 1200px; */
+    height: 400px;
+    margin: auto;
+}
 
-/* .cart-btn {
-    width: 40px;
-    height: 40px;
-    background-color: #fff;
-    cursor: pointer;
-    border: none;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    margin-left: 30px;
-    
-} */
-
-/* .cart-img {
-    background-image: url(images/cart.png);
-    width: 18px;
-    height: 20px;
-} */
-
-/* .cart-badge {
-    display: flex;
-    width: 20px;
-    height: 20px;
-    padding: 3px 14px 1px 6px;
-    border-radius: 25px;
-    background-color: #2c71b8;
-    color: white;
-    z-index: 30;
-    position: absolute;
-    left: -8px;
-    top: -8px;
-    text-align: center;
-    justify-content: center;
-} */
