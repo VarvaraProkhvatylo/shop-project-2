@@ -255,8 +255,91 @@ body {
 .filter {
     width: 100%;
     height: 840px;
+    background-color: rgb(255, 255, 255, 0.25);
     color: #fff;
     padding: 30px 30px;
+    
+    border-right: solid 1px white;
+}
+.filter h1 {
+    margin-bottom: 15px;
+}
+
+.main-filter {
+    width: 100%;
+    height: 730px;
+}
+
+.main-filter li {
+    height: 40px;
+    align-items: center;
+}
+
+.main-filter .type {
+    height: 160px;
+}
+.main-filter .type li {
+    display: flex;
+}
+
+.main-filter .li-checkbox {
+    border: solid 1px white;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+}
+.main-filter .li-checkbox:hover {
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.main-filter .color {
+    height: 280px;
+}
+.main-filter .color li {
+    display: flex;
+}
+
+.main-filter .ram {
+    height: 250px;
+}
+.main-filter .ram li {
+    display: flex;
+}
+
+.main-filter .link {
+    height: 50px;
+    align-items: center;
+}
+.main-filter a {
+    height: 50px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: 100;
+    align-items: center;
+}
+.main-filter a:visited {
+    color: white;
+}
+
+.filter .submit {
+    width: 100%;
+    height: 80px;
+}
+
+.filter .submit button {
+    width: 210px;
+    height: 48px;
+    font-size: 21px;
+    font-weight: bold;
+    border-color: #fff;
+    color: #fff;
+    background-color: #2c71b8;
+}
+.filter .submit button:hover {
+    cursor: pointer;
+    background-color: rgb(255, 255, 255, 0.25);
 }
 
 .menu-head {
@@ -328,8 +411,7 @@ body {
     width: 270px;
     height: 650px;
     border: solid 1px #fff;
-    /* margin: 14px; */
-    
+    /* margin: 14px; */ 
 }
 
 
@@ -452,6 +534,7 @@ body {
 }
 
 .card-buttons button:hover {
+    cursor: pointer;
     background-color: rgb(255, 255, 255, 0.25);
 }
 
