@@ -258,7 +258,6 @@ body {
     background-color: rgb(255, 255, 255, 0.25);
     color: #fff;
     padding: 30px 30px;
-    
     border-right: solid 1px white;
 }
 .filter h1 {
@@ -274,23 +273,33 @@ body {
     height: 40px;
     align-items: center;
 }
+.main-filter li label {
+    position: relative;
+    cursor: pointer;
+    display: inline-flex;
+}
+.main-filter li input[type=checkbox] {
+    display: none;
+}
+
+.main-filter li label::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: solid 1px white;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.main-filter input[type="checkbox"]:checked + label::before {
+    background-color: #fff;
+}
 
 .main-filter .type {
     height: 160px;
 }
 .main-filter .type li {
     display: flex;
-}
-
-.main-filter .li-checkbox {
-    border: solid 1px white;
-    width: 10px;
-    height: 10px;
-    margin-right: 10px;
-}
-.main-filter .li-checkbox:hover {
-    background-color: #fff;
-    cursor: pointer;
 }
 
 .main-filter .color {
