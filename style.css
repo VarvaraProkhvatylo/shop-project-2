@@ -285,11 +285,12 @@ body {
 .main-filter li label::before {
     content: "";
     display: block;
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     border: solid 1px white;
     margin-right: 10px;
     cursor: pointer;
+    align-items: center;
 }
 .main-filter input[type="checkbox"]:checked + label::before {
     background-color: #fff;
