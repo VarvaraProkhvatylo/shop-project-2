@@ -499,6 +499,13 @@ body {
     background-color: transparent;
 }
 .icons .like:hover {
+    /* background-image: url(images/like_hover.png); */
+    background-image: url(images/like_default.png);
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.icons .like-clicked {
     background-image: url(images/like_hover.png);
 }
 
