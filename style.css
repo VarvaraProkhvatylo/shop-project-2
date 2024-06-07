@@ -493,20 +493,20 @@ body {
 }
 .icons .qr:hover {
     background-image: url(images/qr_hover.png);
+    cursor: pointer;
 }
 .icons .like {
     background-image: url(images/like_default.png);
     background-color: transparent;
 }
 .icons .like:hover {
-    /* background-image: url(images/like_hover.png); */
-    background-image: url(images/like_default.png);
-    background-color: transparent;
+    background-image: url(images/like_hover.png);
     cursor: pointer;
 }
 
 .icons .like-clicked {
     background-image: url(images/like_hover.png);
+    background-color: #2c71b8;
 }
 
 .device-block {
