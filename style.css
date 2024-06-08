@@ -504,7 +504,7 @@ body {
     cursor: pointer;
 }
 
-.icons .like-clicked {
+.icons .active {
     background-image: url(images/like_hover.png);
     background-color: #2c71b8;
 }

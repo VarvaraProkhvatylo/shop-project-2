@@ -20,7 +20,7 @@ addToCartBtns.forEach((btn) =>
   })
 );
 
-// like
+// like toggle
 
 let likeBtns = document.querySelectorAll(".like");
 console.log(likeBtns);
@@ -31,31 +31,13 @@ likeBtns.forEach((btn) =>
   })
 );
 
-// let style;
-// function getStyleSheet(style) {
-//   for (const sheet of document.styleSheets) {
-//     if (sheet.title === style) {
-//       return sheet;
-//     }
-//   }
-// }
+const like = likeBtns.classList;
 
-// let backgroundImage = style.icons.like {background-image};
+let isToggled = false;
 
-// function changeBtn() {
-//   if (likeBtns === "clicked") {
-//     likeBtns.style.backgroundImage = "url(images/like_hover.png";
-//   } else {
-//     likeBtns.style.backgroundImage = "url(images/like_default.png)";
-//   }
-// }
-
-function changeBtn() {
-  if (likeBtns === likeBtns.forEach) {
-    likeBtns.setAttribute("class", "like-clicked");
-  } else {
-    likeBtns.setAttribute("class", "like");
-  }
-}
-
-likeBtns.forEach((btn) => btn.addEventListener("click", changeBtn));
+likeBtns.forEach((btn) =>
+  btn.addEventListener("click", function () {
+    isToggled = !isToggled;
+    this.classList.toggle("active");
+  })
+);
