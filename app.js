@@ -31,7 +31,7 @@ likeBtns.forEach((btn) =>
   })
 );
 
-const like = likeBtns.classList;
+// const like = likeBtns.classList;
 
 let isToggled = false;
 
