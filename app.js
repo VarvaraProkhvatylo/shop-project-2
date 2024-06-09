@@ -125,3 +125,9 @@ decrementBtns.addEventListener("click", function () {
   /// те саме, що і вище
   toggleDisableState(newValue);
 });
+
+/// add slick
+$(".slider-wrapper").slick({
+  adaptiveHeight: true,
+  dots: true,
+});

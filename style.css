@@ -34,6 +34,10 @@ body {
     max-width: 50%;
 }
 
+.col-12 {
+    width: 100%;
+}
+
 .flex {
     display: flex;
 }
@@ -613,4 +617,20 @@ body {
 .footer-icon {
     color: #2c71b8;
     margin-right: 5px;
+}
+
+/*  виправити css */
+.slider-wrapper > div {
+    text-align: center;
+    font-size: 30px;
+    padding: 150px 0;
+    color: white;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: red;
+}
+.slick-dots li.slick-active button:before {
+    color: yellow;
 }
