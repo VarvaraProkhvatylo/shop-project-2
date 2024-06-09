@@ -88,17 +88,40 @@ console.log(decrementBtns);
 console.log(incrementBtns);
 console.log(inputFields);
 
-let initialValue = inputFields.getAttribute("value");
-console.log(initialValue);
-// console.log(typeof initialValue);
+let currentValue = +inputFields.value;
+toggleDisableState(currentValue);
 
-let initialValue1 = Number(initialValue);
-// console.log(typeof initialValue1);
-// let currentValue;
+function toggleDisableState(count) {
+  decrementBtns.disabled = count <= 1;
+  incrementBtns.disabled = count >= 5;
+}
 
-decrementBtns.forEach((btn) =>
-  btn.addEventListener("click", function decrement() {
-    // currentValue = initialValue1 - 1;
-    --initialValue1;
-  })
-);
+incrementBtns.addEventListener("click", function () {
+  let currentValue = +inputFields.value;
+  let newValue = currentValue + 1;
+  inputFields.value = newValue;
+
+  // if (newValue <= 1) {
+  //   decrementBtns.disabled = true;
+  // } else {
+  //   decrementBtns.disabled = false;
+  // }
+
+  /// те саме, що і вище
+  toggleDisableState(newValue);
+});
+
+decrementBtns.addEventListener("click", function () {
+  let currentValue = +inputFields.value;
+  let newValue = currentValue - 1;
+  inputFields.value = newValue;
+
+  // if (newValue <= 1) {
+  //   decrementBtns.disabled = true;
+  // } else {
+  //   decrementBtns.disabled = false;
+  // }
+
+  /// те саме, що і вище
+  toggleDisableState(newValue);
+});
