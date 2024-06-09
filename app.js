@@ -1,6 +1,6 @@
 // add to cart
 
-// let productsCountEl = document.getElementById("products-count");
+let productsCountEl = document.getElementById("products-count");
 let addToCartBtns = document.querySelectorAll(".add-to-cart");
 
 // console.log(productsCountEl);
@@ -75,5 +75,30 @@ console.log(likeBtns);
 likeBtns.forEach((btn) =>
   btn.addEventListener("click", function () {
     btn.classList.toggle("liked");
+  })
+);
+
+/// change product quantity
+
+const decrementBtns = document.querySelectorAll(".decrement-button")[0];
+const incrementBtns = document.querySelectorAll(".increment-button")[0];
+const inputFields = document.querySelectorAll(".product-quantity input")[0];
+
+console.log(decrementBtns);
+console.log(incrementBtns);
+console.log(inputFields);
+
+let initialValue = inputFields.getAttribute("value");
+console.log(initialValue);
+// console.log(typeof initialValue);
+
+let initialValue1 = Number(initialValue);
+// console.log(typeof initialValue1);
+// let currentValue;
+
+decrementBtns.forEach((btn) =>
+  btn.addEventListener("click", function decrement() {
+    // currentValue = initialValue1 - 1;
+    --initialValue1;
   })
 );
