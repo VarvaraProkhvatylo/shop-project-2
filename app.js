@@ -131,3 +131,7 @@ $(".slider-wrapper").slick({
   adaptiveHeight: true,
   dots: true,
 });
+
+/// More Details
+let moreDetailsBtns = document.querySelectorAll(".details-btn");
+console.log(moreDetailsBtns);
