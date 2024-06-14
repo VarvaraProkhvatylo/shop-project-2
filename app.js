@@ -135,3 +135,27 @@ $(".slider-wrapper").slick({
 /// More Details
 let moreDetailsBtns = document.querySelectorAll(".details-btn");
 console.log(moreDetailsBtns);
+
+let moreDetailsModal = document.querySelector(".modal");
+console.log(moreDetailsModal);
+
+moreDetailsBtns.forEach((btn) =>
+  btn.addEventListener("click", function () {
+    if ($(moreDetailsModal).css("display", "none")) {
+      $(moreDetailsModal).css("display", "block");
+    } else {
+      $(moreDetailsModal).css("display", "none");
+    }
+  })
+);
+
+let closeModalBtn = document.querySelectorAll(".btn-close");
+console.log(closeModalBtn);
+
+closeModalBtn.forEach((btn) =>
+  btn.addEventListener("click", function () {
+    if ($(moreDetailsModal).css("display", "block")) {
+      $(moreDetailsModal).css("display", "none");
+    }
+  })
+);
