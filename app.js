@@ -150,11 +150,18 @@ console.log(moreDetailsModal);
 // );
 
 //// lesson, same as HW
-moreDetailsBtns.forEach((btn) =>
-  btn.addEventListener("click", function () {
-    moreDetailsModal.classList.add("show");
-  })
-);
+// moreDetailsBtns.forEach((btn) =>
+//   btn.addEventListener("click", function () {
+//     moreDetailsModal.classList.add("show");
+//   })
+// );
+
+function openModal() {
+  moreDetailsModal.classList.add("show");
+}
+moreDetailsBtns.forEach((btn) => btn.addEventListener("click", openModal));
+
+/////
 
 let closeModalBtn = document.querySelector(".btn-close");
 console.log(closeModalBtn);
@@ -168,6 +175,19 @@ console.log(closeModalBtn);
 // );
 
 /// lesson, same as HW
-closeModalBtn.addEventListener("click", function () {
+// closeModalBtn.addEventListener("click", function () {
+//   moreDetailsModal.classList.remove("show");
+// });
+
+function closeModal() {
   moreDetailsModal.classList.remove("show");
+}
+closeModalBtn.addEventListener("click", closeModal);
+
+moreDetailsModal.addEventListener("click", function (e) {
+  console.log(e);
+  console.log(e.target);
+  if (moreDetailsModal === e.target) {
+    closeModal();
+  }
 });
