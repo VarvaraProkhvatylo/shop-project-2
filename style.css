@@ -627,4 +627,8 @@ body {
 .btn-close {
   text-align: right;
   cursor: pointer;
+}
+
+.show {
+  display: block;
 }/*# sourceMappingURL=style.css.map */

@@ -132,30 +132,42 @@ $(".slider-wrapper").slick({
   dots: true,
 });
 
-/// More Details
+/// More Details homework
 let moreDetailsBtns = document.querySelectorAll(".details-btn");
 console.log(moreDetailsBtns);
 
 let moreDetailsModal = document.querySelector(".modal");
 console.log(moreDetailsModal);
 
+// moreDetailsBtns.forEach((btn) =>
+//   btn.addEventListener("click", function () {
+//     if ($(moreDetailsModal).css("display", "none")) {
+//       $(moreDetailsModal).css("display", "block");
+//     } else {
+//       $(moreDetailsModal).css("display", "none");
+//     }
+//   })
+// );
+
+//// lesson, same as HW
 moreDetailsBtns.forEach((btn) =>
   btn.addEventListener("click", function () {
-    if ($(moreDetailsModal).css("display", "none")) {
-      $(moreDetailsModal).css("display", "block");
-    } else {
-      $(moreDetailsModal).css("display", "none");
-    }
+    moreDetailsModal.classList.add("show");
   })
 );
 
-let closeModalBtn = document.querySelectorAll(".btn-close");
+let closeModalBtn = document.querySelector(".btn-close");
 console.log(closeModalBtn);
 
-closeModalBtn.forEach((btn) =>
-  btn.addEventListener("click", function () {
-    if ($(moreDetailsModal).css("display", "block")) {
-      $(moreDetailsModal).css("display", "none");
-    }
-  })
-);
+// closeModalBtn.forEach((btn) =>
+//   btn.addEventListener("click", function () {
+//     if ($(moreDetailsModal).css("display", "block")) {
+//       $(moreDetailsModal).css("display", "none");
+//     }
+//   })
+// );
+
+/// lesson, same as HW
+closeModalBtn.addEventListener("click", function () {
+  moreDetailsModal.classList.remove("show");
+});
